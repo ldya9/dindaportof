@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost/folio/index.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index_files/all.min.css">
+    <title>Dinda Portfolio</title>
+    <link rel="stylesheet" href="./index_files/style.css">
+    <link rel="stylesheet" href="./index_files/aos.css">
+  </head>
+  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <nav>
+      <div class="nav-container">
+        <div class="logo aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
+          <span>Portofolio</span>
+        </div>
+        <div class="links">
+          <div class="link aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <a href="http://localhost/folio/index.php">Home</a>
+          </div>
+          <div class="link aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <a href="http://localhost/folio/about.php">About</a>
+          </div>
+          <div class="link aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <a href="http://localhost/folio/project.php">Project</a>
+          </div>
+          <div class="link aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <a href="http://localhost/folio/contact.php">Contact</a>
+          </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+      </div>
+      <div class="dropdown">
+        <div class="links">
+          <a href="http://localhost/folio/index.php">Home</a>
+          <a href="http://localhost/folio/index.php">About</a>
+          <a href="http://localhost/folio/index.php">Project</a>
+          <a href="http://localhost/folio/index.php">Contact</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+      </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image aos-init aos-animate" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="./index_files/main.png" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800" class="aos-init aos-animate">Hello! I'm <span>Dinda</span></h1>
+                    <div class="typewriter aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" class="aos-init aos-animate">I love exploring new things in the world of creativity and technology, and am always interested in making something meaningful. Let's create together!</p>
+                    <div class="social-links aos-init aos-animate" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://www.instagram.com/dindalyh?igsh=aTJlOGFicWo5cjF6"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/dinda-maulidiyah-1b6700298/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/lyw00__?t=6vHlxIwKIr-d843IUJ6gsg&amp;s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="btn aos-init aos-animate" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="./index_files/aos.js.download"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+
+</body></html>
